@@ -25,7 +25,7 @@ func listenAndServe(port string) {
 }
 
 func main() {
-	http.HandleFunc("/"""""""""""""", helloHandler)
+	http.HandleFunc("/", helloHandler)
 	port := os.Getenv("PORT")
 	if len(port) == 0 {
 		port = "8080"
